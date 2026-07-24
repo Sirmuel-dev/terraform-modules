@@ -1,12 +1,12 @@
-output "public_ip" {
+output "instance_ids" {
 
-  value = aws_instance.server.public_ip
+  value = aws_instance.server[*].id
 
 }
 
 
-output "instance_id" {
+output "public_ips" {
 
-  value = aws_instance.server.id
+  value = aws_instance.server[*].public_ip
 
 }

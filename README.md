@@ -35,3 +35,43 @@ By the end of this project, I learned:
 The project creates AWS infrastructure using Terraform modules.
 
 Current architecture:
+
+
+# Terraform AWS Infrastructure Project
+
+## Overview
+This project provisions AWS infrastructure using Terraform with reusable modules.
+
+## Architecture
+- VPC
+- Public Subnets
+- Internet Gateway
+- Route Tables
+- Security Groups
+- EC2 Instances
+- Application Load Balancer (ALB)
+- Remote Backend (S3 + DynamoDB)
+
+## Project Structure
+
+## Prerequisites
+- Terraform
+- AWS CLI
+- AWS Account
+
+## Deployment
+terraform init
+terraform plan
+terraform apply
+
+## Modules
+- vpc
+- security_group
+- ec2
+- alb
+
+## Future Improvements
+- Auto Scaling Group
+- Launch Template
+- HTTPS (ACM)
+- Route 53
