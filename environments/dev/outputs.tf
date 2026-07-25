@@ -1,6 +1,12 @@
-output "server_ip" {
+output "alb_dns_name" {
 
-  value = module.ec2.public_ip
+  value = module.alb.alb_dns_name
 
 }
 
+
+output "autoscaling_group_name" {
+
+  value = module.autoscaling.autoscaling_group_name
+
+}
